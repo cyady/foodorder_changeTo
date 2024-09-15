@@ -1,0 +1,2 @@
+npx nodemon <-backend에서 index.js를 터미널로 열고 입력
+그리고 client에서 npm run start
