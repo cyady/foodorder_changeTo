@@ -7,6 +7,7 @@ const productController = require('./controllers/productController')
 const uploadController = require('./controllers/uploadController')
 const newsletterController = require('./controllers/newsletterController');
 const app = express()
+const port = process.env.PORT || 5000;
 
 // DB 연결
 async function connectDB() {
@@ -38,4 +39,4 @@ app.use('/upload', uploadController)
 app.use('/newsletter', newsletterController);
 
 // 서버 시작
-app.listen(process.env.PORT, () => console.log('Server has been started successfully!'))
+app.listen(port, () => console.log('Server has been started successfully!'))
