@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f4e96459.css",
+    "main.js": "/static/js/main.cf2e5bcb.js",
+    "static/media/womaneating.jpg": "/static/media/womaneating.cd7042753703efc5f2be.jpg",
+    "static/media/womaneating2.jpg": "/static/media/womaneating2.7eb0c19e7a62c8848072.jpg",
+    "static/media/introimg.png": "/static/media/introimg.928eac20cbab5a470572.png",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.68596cb399986ca84ec2.jpg",
+    "static/media/male-delivery-guy-riding-scooter.svg": "/static/media/male-delivery-guy-riding-scooter.43e667ba6b1678129061d5093c98f6ca.svg",
+    "static/media/auto-img.png": "/static/media/auto-img.413b437d610edd49a25b.png",
+    "static/media/delivery-location.svg": "/static/media/delivery-location.6199ce14a7a70a51a0de7c21fb24f92c.svg",
+    "static/media/deliveryman-with-pizza.svg": "/static/media/deliveryman-with-pizza.6ca7a4da2bc7594113008472be549caf.svg",
+    "index.html": "/index.html",
+    "main.f4e96459.css.map": "/static/css/main.f4e96459.css.map",
+    "main.cf2e5bcb.js.map": "/static/js/main.cf2e5bcb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4e96459.css",
+    "static/js/main.cf2e5bcb.js"
+  ]
+}

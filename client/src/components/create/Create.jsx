@@ -38,7 +38,7 @@ const Create = () => {
       }
 
       // 게시글과 이미지 함께 업로드
-      const res = await fetch(`http://localhost:5000/product`, {
+      const res = await fetch(`https://foodorder-changeto-ajouinvest.onrender.com/product`, {
         method: 'POST',
         headers: {
           "Authorization": `Bearer ${token}`, // 토큰은 필요하지만 Content-Type은 자동 설정

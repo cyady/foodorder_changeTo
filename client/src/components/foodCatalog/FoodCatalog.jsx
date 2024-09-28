@@ -14,7 +14,7 @@ const FoodCatalog = () => {
     
     const fetchPostsByCategory = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/product?category=${categoryEndpoint}`, {
+        const res = await fetch(`https://foodorder-changeto-ajouinvest.onrender.com/product?category=${categoryEndpoint}`, {
           headers: {
             "Authorization": `Bearer ${token}`
           }
@@ -43,7 +43,7 @@ const FoodCatalog = () => {
             filteredPosts.map((post) => (
               <Link to={`/post/${post._id}`} key={post._id} className={classes.food}>
                 <div className={classes.imgContainer}>
-                  <img src={`http://localhost:5000/images/${post.img}`} alt={post.title} className={classes.foodImg} />
+                  <img src={`https://foodorder-changeto-ajouinvest.onrender.com/images/${post.img}`} alt={post.title} className={classes.foodImg} />
                 </div>
                 <div className={classes.foodDetails}>
                   <h4 className={classes.foodTitle}>{post.title}</h4>

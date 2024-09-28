@@ -10,7 +10,7 @@ const PostDetails = () => {
 
   useEffect(() => {
     const fetchPostDetails = async () => {
-      const res = await fetch(`http://localhost:5000/product/find/${id}`, {
+      const res = await fetch(`https://foodorder-changeto-ajouinvest.onrender.com/product/find/${id}`, {
         headers: {
            "Authorization": `Bearer ${token}`,
         },
@@ -27,7 +27,7 @@ const PostDetails = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-        <img src={`http://localhost:5000/uploads/${postDetails?.img}`} alt={postDetails?.title} />
+        <img src={`https://foodorder-changeto-ajouinvest.onrender.com/uploads/${postDetails?.img}`} alt={postDetails?.title} />
         </div>
         <div className={classes.right}>
           <h2 className={classes.title}>{postDetails?.title}</h2>
