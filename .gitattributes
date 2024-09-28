@@ -1,2 +1,4 @@
 client/node_modules/.cache/defult-development/4.pack filter=lfs diff=lfs merge=lfs -text
 client/node_modules/.cache/defult-development/15.pack filter=lfs diff=lfs merge=lfs -text
+client/node_modules/.cache/default-development/15.pack filter=lfs diff=lfs merge=lfs -text
+*.pack filter=lfs diff=lfs merge=lfs -text

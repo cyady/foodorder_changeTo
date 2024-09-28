@@ -1,4 +1,4 @@
-.container{
+.container {
     height: calc(100vh - 60px);
     width: 100%;
     display: flex;
@@ -6,96 +6,88 @@
     justify-content: center;
     padding-bottom: 5rem;
     margin-top: 3.5rem;
-}
-
-.wrapper{
+  }
+  
+  .wrapper {
     display: flex;
     flex-direction: column;
     border: 1px solid #444;
     border-radius: 22px;
     padding: 1.5rem;
-}
-
-.title{
+    width: 600px; /* 조금 더 넓게 설정 */
+  }
+  
+  .title {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 32px;
     font-weight: bold;
-}
-
-.inputWrapper{
+  }
+  
+  .inputWrapper {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 0.5rem;
-}
+    justify-content: space-between; /* 공간 균등하게 */
+    margin-bottom: 1rem;
+  }
 
-.inputWrapper>label{
-    margin-right: 15px;
-    width: 33%;
-}
-
-.inputWrapperImage{
-    width: 400px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.inputWrapperImage span{
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: teal;
-    color: #fff;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: 150ms all;
-    border-radius: 16px;
-    margin: 0.1rem 4.75rem;
-}
-
-.inputWrapperImage span:hover{
-    background-color: #fff;
-    color: teal;
-    border-color: teal;
-}
-
-.imageName{
-    position: absolute;
-    right: 35rem;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 14px;
-}
-
-.closeIcon{
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.input{
-    padding: 0.5rem;
-    width: 77.5%;
+  .input {
+    padding: 0.75rem; /* 세로폭을 늘림 */
+    width: 60%; /* 칸을 중앙에 배치 */
     border-radius: 8px;
     border: 1px solid rgb(170, 165, 165);
-}
+  }
+  
 
-.input:focus{
+  .inputWrapper > label {
+    margin-right: 15px;
+    width: 25%; /* 레이블 너비 설정 */
+  }
+  
+  .textarea {
+    padding: 0.75rem;
+    width: 72%; /* 넓은 description */
+    height: 180px;
+    border-radius: 8px;
+    border: 1px solid rgb(170, 165, 165);
+    resize: none; /* 사용자가 크기 변경하지 못하게 */
+  }
+  
+  .textarea:focus {
     outline: none;
     border-color: rgb(99, 92, 92);
-}
+  }
+  
 
-.buttonWrapper{
+
+  .select {
+    padding: 0.75rem;
+    width: 73%; /* 드롭다운 너비 */
+    border-radius: 8px;
+    border: 1px solid rgb(170, 165, 165);
+  }
+  
+  .select:focus {
+    outline: none;
+    border-color: rgb(99, 92, 92);
+  }
+  
+  .inputWrapperImage {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .buttonWrapper {
+    display: flex;
     justify-content: center;
-    margin-top: 6px;
-}
-
-.submitBtn{
-    width: 50%;
+    margin-top: 2rem;
+  }
+  
+  .submitBtn {
+    width: 60%; /* 버튼 너비 */
     background-color: #cea600;
     color: #fff;
     padding: 0.75rem 1.25rem;
@@ -103,11 +95,41 @@
     border: 1px solid transparent;
     cursor: pointer;
     transition: 150ms all;
-    margin-top: 1rem;
-}
-
-.submitBtn:hover{
+  }
+  
+  .submitBtn:hover {
     background-color: #fff;
     color: #cea600;
     border-color: #cea600;
+  }
+  
+  .uploadButton {
+    display: inline-block;
+    padding: 0.75rem 1.25rem; /* 패딩을 늘려 버튼처럼 보이도록 */
+    background-color: #007bff; /* 파란색 버튼 */
+    color: #fff; /* 텍스트 색상 흰색 */
+    border: none;
+    border-radius: 8px; /* 모서리 둥글게 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+.uploadButton:hover {
+    background-color: #0056b3; /* 마우스 호버 시 더 어두운 파란색 */
+}
+
+.imageName {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closeIcon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
 }

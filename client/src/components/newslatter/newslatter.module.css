@@ -1,67 +1,43 @@
-.container{
-    height: 500px;
-    width: 100%;
-    margin: 8.5rem 0;
-    padding-top: 8rem;
-}
-
-.wrapper{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+/* newslatter.module.css */
+.newsletterContainer {
+    text-align: center;
+    padding: 4rem; /* 크기와 내부 여백을 키움 */
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    margin: 10rem auto; /* 상단과 하단 여백을 크게 설정하여 위의 콘텐츠가 보이지 않도록 */
+    max-width: 600px; /* 너비를 조금 더 넓힘 */
+  }
+  
+  .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.subtitle{
-    margin-bottom: 12px;
-    font-size: 18px;
-}
-
-.title{
-    margin-bottom: 32px;
-    font-size: 40px;
-    color: #f00;
-}
-
-.inputContainer{
-    width: 500px;
-    height: 70px;
-    border: 1px solid #888;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    border-radius: 20px;
-}
-
-.inputContainer > input{
-    outline: none;
+    gap: 2rem; /* 입력 필드 간의 간격을 늘림 */
+  }
+  
+  .input {
+    width: 100%;
+    padding: 1rem; /* 입력 필드의 크기를 키움 */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .submitBtn {
+    background-color: #007bff;
+    color: white;
     border: none;
-    width: 90%;
-    padding: 1rem 0;
-    transition: 150ms all;
-}
-
-.inputContainer>input::placeholder{
-    font-size: 16px;
-}
-
-.inputContainer > input:focus{
-    padding-left: 0.75rem;
-}
-
-.inputContainer:focus-within{
-    border-color: #333;
-}
-
-.sendIcon{
-    font-size: 22px;
-}
-
-.illustration{
-    height: 300px;
-    margin-top: 2.5rem;
-}
+    padding: 1rem 2rem; /* 버튼 크기를 키움 */
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .submitBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+  }
+  

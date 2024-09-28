@@ -1,20 +1,29 @@
-.container{
-    height: calc(100vh - 60px);
+.container {
+    height: calc(100vh-60px); /* 화면 높이를 100%로 설정 */
     width: 100%;
-    margin-top: 5.5rem;
-    margin-bottom: -15.5rem;
-
+    background-image: url('../../assets/hero-bg.jpg'); /* 배경 이미지 경로 설정 */
+    background-size: contain; /* 배경 이미지가 화면을 덮도록 설정 */
+    background-position: center; /* 배경 이미지를 중앙에 맞춤 */
+    background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 5.5rem;
 }
 
-.wrapper{
-    height: 100%;
+.wrapper {
     width: 85%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 15rem;
+    gap: 5rem;
+    background-color: rgba(255, 255, 255, 0.8); /* 투명한 배경 추가 */
+    padding: 20px;
+    border-radius: 8px;
 }
-.title{
+
+.title {
     color: #f00;
     font-size: 46px;
     font-weight: bold;
@@ -22,94 +31,64 @@
     white-space: nowrap;
 }
 
-.firstMsg{
+.firstMsg {
     color: #f00;
     font-weight: bold;
     font-size: 26px;
 }
 
-.firstMsg > span{
-    color: #f00;
-    font-weight: bold;
+.secondMsg {
     font-size: 26px;
-}
-
-.secondMsg{
-    font-size: 26px;
-}
-
-.secondMsg > span{
-    font-weight: bold;
     color: rgb(221, 33, 33);
 }
 
-.desc{
+.desc {
     color: #555;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 50px;
-    max-width: 350px;
+    max-width: 800px;
     line-height: 30px;
+    text-align: justify;
 }
 
-.buttons{
+.buttons {
     margin-top: 4rem;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.buttons > button{
+.buttons > button {
     outline: none;
     border: 1px solid transparent;
     padding: 0.5rem 1.25rem;
-    color: #fff;
-    background-color: #f00;
+    color: #000;
+    background-color: #fff;
     border-radius: 8px;
+    border-color: #f00;
     font-size: 18px;
     transition: 150ms all;
     cursor: pointer;
 }
 
-.buttons>button:hover{
+.buttons > button:hover {
     border-color: #f00;
     background-color: #fff;
     color: #f00;
 }
 
-.buttonSee > a{
+.buttonSee > a {
     display: flex;
     align-items: center;
     gap: 8px;
     text-decoration: none;
     color: inherit;
 }
-
-/* left */
-.left{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2rem;
+.Homeimg {
+    width: 100%; /* 너비를 부모 요소에 맞추기 */
+    height: auto; /* 높이는 자동으로 비율을 유지 */
+    max-width: 600px; /* 이미지의 최대 너비를 제한 */
+    object-fit: contain; /* 이미지의 비율을 유지하면서, 짤리지 않도록 조정 */
+    object-position: center; /* 이미지 중앙에 맞춤 */
 }
-
-
-/* right */
-.right{
-    flex: 1;
-}
-
-.manEatingImg{
-    height: 75%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-
-
-
-
-

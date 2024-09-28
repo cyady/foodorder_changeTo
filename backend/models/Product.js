@@ -8,7 +8,7 @@ const ProductSchema = new mongoose.Schema({
     },
     desc: {
         type: String,
-        require: true,
+        required: true,
         min: 8,
     },
     price: {
@@ -27,7 +27,6 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
     }
-   
 })
 
 module.exports = mongoose.model("Product", ProductSchema)

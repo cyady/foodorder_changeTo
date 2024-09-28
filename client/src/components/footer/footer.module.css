@@ -1,97 +1,78 @@
-.container{
-    height: 225px;
-    width: 100%;
-    padding-bottom: 2.5rem;
-    margin-top: 7.5rem;
+.container {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-top: 1px solid #ddd;
+    text-align: center;
 }
 
-.wrapper{
-    width: 80%;
-    height: 100%;
+.wrapper {
+    width: 85%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.col{
-    flex: 1;
-    height: 100%;
+.textWrapper {
+    margin-bottom: 20px;
+}
+
+.contact {
+    font-size: 16px;
+    color: #555;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.socialIcons {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    gap: 40px; /* 아이콘 간 간격 조정 */
+    margin-bottom: 20px;
 }
 
-.col:nth-child(2){
-  align-items: center;
+.socialIcons a {
+    text-decoration: none;
+    color: #555;
+    font-size: 30px; /* 아이콘 크기 */
+    transition: color 0.2s;
 }
 
-.col:last-child{
-  align-items: flex-end;
+.socialIcons a:hover {
+    color: #007bff;
 }
 
-.title{
-    color: #444;
-    margin-bottom: 16px;
-}
-
-.list{
+.buttonWrapper {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-    list-style: none;
-    margin-left: 6px;
-}
-
-.list > li{
-    color: #777;
-    font-size: 18px;
-}
-
-.list > .workingTime{
-    color: #000;
-    font-size: 20px;
-}
-
-.list > .workingTime:nth-child(2){
-    margin-bottom: 10px;
-}
-
-.iconList{
-    display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 30px;
-    list-style: none;
+}
+
+.button {
+    padding: 5px 10px; /* 버튼 크기 줄임 */
+    font-size: 12px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 150ms all;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
 
-.iconList > *:hover{
-    color: #444;
+.button:hover {
+    background-color: #0056b3;
 }
 
-.attribution{
+.copyRight {
+    font-size: 12px;
+    color: #888;
     margin-top: 20px;
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-    margin-left: 12.5rem;
-    margin-top: 5rem;
-    padding-bottom: 2.5rem;
-}
-
-.attribution a{
-    text-decoration: none;
-    color: #222;
-    transition: 150ms all;
-}
-
-.attribution a:hover{
-    color: #777;
 }
